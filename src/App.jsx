@@ -1,6 +1,7 @@
-import { Routes, Route} from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 import styled from 'styled-components';
-import Home from './component/Home';
+import { About } from './pages/About';
+import { Home } from './pages/Home';
 
 /**
  * Components
@@ -11,13 +12,11 @@ const Header = styled.header`
 
 const App = () => {
     return (
-		<div className="App">
-			<h1>Welcome to React Router!</h1>
 			<Routes>
 				<Route path="/" element={<Home />} />
+				<Route path="/about" element={<About />} />
 			</Routes>
-		</div>
-	)
+		)
 }
 
 export default App;
