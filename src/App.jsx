@@ -11,12 +11,12 @@ const Header = styled.header`
 `;
 
 const App = () => {
-    return (
-			<Routes>
-				<Route path="/" element={<Home />} />
-				<Route path="/about" element={<About />} />
-			</Routes>
-		)
+  return (
+		<Routes>
+			<Route path="/" element={<Home />} />
+			<Route path="/about" element={<About />} />
+		</Routes>
+	)
 }
 
 export default App;
