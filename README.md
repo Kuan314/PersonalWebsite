@@ -1,6 +1,6 @@
 # KuanLim的個人網頁
 
-https://kuan314.github.io/personalwebsite/
+https://kuan314.github.io/PersonalWebsite/
 
 ## 網頁配色
 1. #FBE0C3
