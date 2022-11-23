@@ -13,8 +13,8 @@ const Header = styled.header`
 const App = () => {
   return (
 		<Routes>
-			<Route exact path="/" element={<Home />} />
-			<Route path="/about" element={<About />} />
+			<Route exact path="/PersonalWebsite" element={<Home />} />
+			<Route path="/PersonalWebsite/about" element={<About />} />
 		</Routes>
 	)
 }
