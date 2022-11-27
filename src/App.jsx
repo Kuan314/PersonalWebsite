@@ -7,15 +7,19 @@ import { Home } from './pages/Home';
  * Components
  */
 const Header = styled.header`
-	background-color: #
+	background-color: #FBE0C3;
+	height: 100px;
 `;
 
 const App = () => {
   return (
-		<Routes>
-			<Route exact path="/" element={<Home />} />
-			<Route path="/about" element={<About />} />
-		</Routes>
+		<>
+			<Header />
+			<Routes>
+				<Route exact path="/" element={<Home />} />
+				<Route path="/about" element={<About />} />
+			</Routes>
+		</>
 	)
 }
 
