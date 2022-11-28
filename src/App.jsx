@@ -1,24 +1,18 @@
 import { Routes, Route } from 'react-router-dom';
-import styled from 'styled-components';
 import { About } from './pages/About';
 import { Home } from './pages/Home';
-
-/**
- * Components
- */
-const Header = styled.header`
-	background-color: #FBE0C3;
-	height: 100px;
-`;
+import Header from './component/Header';
 
 const App = () => {
   return (
 		<>
+		<div className='bg-white'>
 			<Header />
 			<Routes>
 				<Route exact path="/" element={<Home />} />
 				<Route path="/about" element={<About />} />
 			</Routes>
+		</div>
 		</>
 	)
 }
