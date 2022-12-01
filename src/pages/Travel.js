@@ -1,3 +1,3 @@
 export function Travel() {
-    return <h1>Travel</h1>
+  return <h1>Travel</h1>
 };

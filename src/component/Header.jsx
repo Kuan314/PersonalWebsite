@@ -1,24 +1,25 @@
 import React from "react";
 
 const navigation = [
-	{name: "a", href: "#"},
-	{name: "b", href: "#"},
-	{name: "c", href: "#"},
-	{name: "d", href: "#"},
+	{name: "Mini Challenge", href: "/#/miniChallenge"},
+	{name: "Website", href: "/#/website"},
+	{name: "Other", href: "#"}
 ];
 
 function Header() {
 	return (
 		<div className="grid grid-cols-2 mt-4 mx-3">
 			<div className="font-bold text-2xl">
-				logo
+				<a href="/">
+					Home
+				</a>
 			</div>
 			<div className="flex justify-around">
 				{navigation.map((item) => (
 					<a 
 						key={item.name}
 						href={item.href}
-						className='text-m font-bold'
+						className='px-3 py-1 text-m font-bold border rounded border-black'
 					>
 						{item.name}
 					</a>
