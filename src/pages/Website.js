@@ -6,4 +6,4 @@ function Website() {
 	);
 }
 
-export default Website();
+export default Website;

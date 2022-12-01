@@ -10,7 +10,7 @@ function Header() {
 	return (
 		<div className="grid grid-cols-2 mt-4 mx-3">
 			<div className="font-bold text-2xl">
-				<a href="/">
+				<a href="/PersonalWebsite">
 					Home
 				</a>
 			</div>
