@@ -8,7 +8,7 @@ import Header from './component/Header';
 const App = () => {
   return (
 		<>
-		<div className='bg-white'>
+		<div className='bg-primary h-full'>
 			<Header />
 			<Routes>
 				<Route exact path="/" element={<Home />} />
