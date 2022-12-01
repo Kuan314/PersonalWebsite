@@ -14,12 +14,12 @@ function Header() {
 					Home
 				</a>
 			</div>
-			<div className="flex justify-around">
+			<div className="flex justify-end">
 				{navigation.map((item) => (
 					<a 
 						key={item.name}
 						href={item.href}
-						className='px-3 py-1 text-m font-bold border rounded border-black'
+						className='px-2 py-1 mx-6 text-m font-bold border rounded border-black'
 					>
 						{item.name}
 					</a>
