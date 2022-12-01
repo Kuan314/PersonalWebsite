@@ -1,8 +1,8 @@
 import React from "react";
 
 const navigation = [
-	{name: "Mini Challenge", href: "/#/miniChallenge"},
-	{name: "Website", href: "/#/website"},
+	{name: "Mini Challenge", href: "/PersonalWebsite/#/miniChallenge"},
+	{name: "Website", href: "/PersonalWebsite/#/website"},
 	{name: "Other", href: "#"}
 ];
 
@@ -10,7 +10,7 @@ function Header() {
 	return (
 		<div className="grid grid-cols-2 mt-4 mx-3">
 			<div className="font-bold text-2xl">
-				<a href="/PersonalWebsite">
+				<a href="/PersonalWebsite/">
 					Home
 				</a>
 			</div>
