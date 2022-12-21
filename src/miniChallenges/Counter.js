@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 
-const [num, getNum] = useState(0);
-
 function Counter() {
+  const [num, getNum] = useState(0);
+  
   return ( 
     <>
     <h1>Counter</h1>
