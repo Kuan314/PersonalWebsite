@@ -9,7 +9,7 @@ import Counter from './miniChallenges/Counter';
 const App = () => {
   return (
 		<>
-		<div className='bg-primary h-full'>
+		<div className='bg-primary h-screen'>
 			<Header />
 			<Routes>
 				{/* Main Pages */}
