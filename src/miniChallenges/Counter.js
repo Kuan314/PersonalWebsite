@@ -1,7 +1,19 @@
 import React, { useState } from "react";
 
-function Counter() {
-  const [num, getNum] = useState(0);
+const Counter = () => {
+  const [num, setNum] = useState(0);
+
+  const addNum = () => {
+    setNum(num + 1);
+  };
+
+  const minusNum = () => {
+    setNum(num - 1);
+  };
+
+  const resetNum = () => {
+    setNum(0);
+  }
 
   return ( 
     <>
@@ -11,13 +23,13 @@ function Counter() {
         {num}
       </div>
       <div className="flex">
-        <button className="w-12 p-2 m-2 text-xl border-2 rounded-md active:bg-[#000], ">
+        <button className="w-12 p-2 m-2 text-xl border-2 rounded-md" onClick={addNum}>
           +
         </button>
-        <button className="w-12 p-2 m-2 text-xl border-2 rounded-md">
+        <button className="w-12 p-2 m-2 text-xl border-2 rounded-md" onClick={minusNum}>
           -
         </button>
-        <button className="p-2 m-2 text-xl border-2 rounded-md">
+        <button className="p-2 m-2 text-xl border-2 rounded-md" onClick={resetNum}>
           reset
         </button>
       </div>
