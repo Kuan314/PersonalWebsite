@@ -23,13 +23,22 @@ const Counter = () => {
         {num}
       </div>
       <div className="flex">
-        <button className="w-12 p-2 m-2 text-xl border-2 rounded-md" onClick={addNum}>
+        <button 
+          className="w-12 p-2 m-2 text-xl border-textSecondary border-2 rounded-md hover:bg-textSecondary hover:text-white" 
+          onClick={addNum}
+        >
           +
         </button>
-        <button className="w-12 p-2 m-2 text-xl border-2 rounded-md" onClick={minusNum}>
+        <button 
+          className="w-12 p-2 m-2 text-xl border-textSecondary border-2 rounded-md hover:bg-textSecondary hover:text-white"
+          onClick={minusNum}
+        >
           -
         </button>
-        <button className="p-2 m-2 text-xl border-2 rounded-md" onClick={resetNum}>
+        <button
+          className="p-2 m-2 text-xl border-textSecondary border-2 rounded-md hover:bg-textSecondary hover:text-white"
+          onClick={resetNum}
+        >
           reset
         </button>
       </div>
