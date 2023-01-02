@@ -5,6 +5,7 @@ import MiniChallenge from './pages/MiniChallenge';
 import Website from './pages/Website';
 import Header from './component/Header';
 import Counter from './miniChallenges/Counter';
+import Todo from './miniChallenges/ToDo';
 
 const App = () => {
   return (
@@ -20,6 +21,7 @@ const App = () => {
 
 				{/* Mini Challenges */}
 				<Route path="/miniChallenge/Counter" element={<Counter />} />
+				<Route path="/miniChallenge/Todo" element={<Todo />} />
 
 			</Routes>
 		</div>
