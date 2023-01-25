@@ -1,7 +1,7 @@
 import React from "react";
 
 const navigation = [
-	{name: "Mini Challenge", href: "/PersonalWebsite/#/miniChallenge"},
+	{name: "Challenges", href: "/PersonalWebsite/#/Challenges"},
 	{name: "Website", href: "/PersonalWebsite/#/website"},
 	{name: "Other", href: "#"}
 ];
@@ -9,7 +9,7 @@ const navigation = [
 function Header() {
 	return (
 		<div className="grid grid-cols-2 pt-4 mx-3">
-			<div className="font-bold text-2xl text-textPrimary">
+			<div className="font-bold lg:text-2xl sm:text-lg text-textPrimary">
 				<a href="/PersonalWebsite/">
 					Home
 				</a>

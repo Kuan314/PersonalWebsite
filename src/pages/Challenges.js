@@ -1,15 +1,15 @@
 const challengesList = [
 	{
 		name: "Counter",
-		href: "./#/miniChallenge/Counter",
+		href: "./#/Challenges/Counter",
 	},
 	{
 		name: "Todo",
-		href: "./#/miniChallenge/Todo"
+		href: "./#/Challenges/Todo"
 	}
 ];
 
-function MiniChallenge() {
+function Challenges() {
 	return (
 		<div className="grid grid-cols-4 gap-6 bg-primary mx-8 mt-4">
 			{challengesList.map((challenge) => {
@@ -25,4 +25,4 @@ function MiniChallenge() {
 	)
 }
 
-export default MiniChallenge;
+export default Challenges;

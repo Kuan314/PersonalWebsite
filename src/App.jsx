@@ -1,7 +1,7 @@
 import { Routes, Route } from 'react-router-dom';
 import About from './pages/About';
 import Home from './pages/Home';
-import MiniChallenge from './pages/MiniChallenge';
+import MiniChallenge from './pages/Challenges';
 import Website from './pages/Website';
 import Header from './component/Header';
 import Counter from './miniChallenges/Counter';
