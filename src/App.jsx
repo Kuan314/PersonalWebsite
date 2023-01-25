@@ -15,13 +15,13 @@ const App = () => {
 			<Routes>
 				{/* Main Pages */}
 				<Route exact path="/" element={<Home />} />
-				<Route path="/miniChallenge" element={<MiniChallenge />} />
+				<Route path="/Challenges" element={<MiniChallenge />} />
 				<Route path="/website" element={<Website />} />
 				<Route path="/about" element={<About />} />
 
 				{/* Mini Challenges */}
-				<Route path="/miniChallenge/Counter" element={<Counter />} />
-				<Route path="/miniChallenge/Todo" element={<Todo />} />
+				<Route path="/Challenges/Counter" element={<Counter />} />
+				<Route path="/Challenges/Todo" element={<Todo />} />
 
 			</Routes>
 		</div>
