@@ -8,8 +8,8 @@ const navigation = [
 
 function Header() {
 	return (
-		<div className="grid grid-cols-2 pt-4 mx-3">
-			<div className="font-bold lg:text-2xl sm:text-lg text-textPrimary">
+		<div className="grid grid-cols-2 pt-4 mx-3 min-w-screen">
+			<div className="font-bold sm:text-2xl text-xl text-textPrimary">
 				<a href="/PersonalWebsite/">
 					Home
 				</a>
@@ -19,7 +19,7 @@ function Header() {
 					<a 
 						key={item.name}
 						href={item.href}
-						className='px-2 py-1 mx-6 text-m font-bold border rounded border-black hover:ease-out'
+						className="sm:px-2 sm:py-1 p-1 sm:text-m text-s sm:mx-6 mx-1 font-bold border rounded border-black hover:ease-out"
 					>
 						{item.name}
 					</a>
