@@ -1,5 +1,6 @@
+import { useState } from "react";
 
-const lists = [
+const tasks = [
   {
     name: "Wash clothes",
     status: false,
@@ -11,6 +12,17 @@ const lists = [
 ];
 
 const Todo = () => {
+  const [task, setTask] = useState("");
+
+  const addTask = () => {
+    tasks.push({
+      name: task,
+      status: false,
+    });
+
+    setTask("");
+  }
+  
   return (
     <>
     <div className="flex flex-col items-center pt-4">
@@ -18,17 +30,17 @@ const Todo = () => {
         Todo List
       </h1>
 
-      <form>
-        <input className="px-1 border rounded-md" type="text" />
-        <button className="px-1 mx-2 border-textSecondary rounded-md border-2 ">Submit</button>
+      <form onSubmit={addTask}>
+        <input className="px-1 border rounded-md" type="text" value={task} onChange={e => setTask(e.target.value)} />
+        <button className="px-1 mx-2 border-textSecondary rounded-md border-2">Submit</button>
       </form>
 
       <div className="m-2 p-2 w-60 flex flex-col justify-center mx-4 bg-white">
-        {lists.map((list) => {
+        {tasks.map((task) => {
           return (
             <div className="flex justify-between">
-              {list.name}
-              <input type="checkbox" defaultChecked={list.status} />
+              {task.name}
+              <input type="checkbox" defaultChecked={task.status} />
             </div>
           )
         })}
