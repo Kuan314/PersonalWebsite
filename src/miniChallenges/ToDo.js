@@ -15,10 +15,12 @@ const Todo = () => {
   const [task, setTask] = useState("");
 
   const addTask = () => {
-    tasks.push({
-      name: task,
-      status: false,
-    });
+    if(!(task.match(""))){
+      tasks.push({
+        name: task,
+        status: false,
+      });
+    }
 
     setTask("");
   }
