@@ -15,11 +15,14 @@ const Todo = () => {
   const [task, setTask] = useState("");
 
   const addTask = () => {
-    if(!(task.match(""))){
+    if(task.match(/^[\S]+$/)){
+      console.log(task);
       tasks.push({
         name: task,
         status: false,
       });
+    } else {
+      alert("Your input is not valid!");
     }
 
     setTask("");
