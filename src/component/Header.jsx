@@ -8,7 +8,7 @@ const navigation = [
 
 const Header = () => {
 	return (
-		<div className="grid grid-cols-2 pt-4 mx-3 min-w-screen">
+		<div className="grid grid-cols-2 pt-4 pb-4 mx-3 min-w-screen">
 			<div className="font-bold sm:text-2xl text-xl text-textPrimary">
 				<a href="/PersonalWebsite/">
 					Home
