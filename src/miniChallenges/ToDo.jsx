@@ -1,5 +1,4 @@
 import { useState } from "react";
-import TextBar from "../component/TextBar";
 
 const tasks = [
   {
@@ -17,7 +16,6 @@ const Todo = () => {
 
   const addTask = () => {
     if(task.match(/^[\S]+$/)){
-      console.log(task);
       tasks.push({
         name: task,
         status: false,
@@ -37,7 +35,8 @@ const Todo = () => {
       </h1>
 
       <form onSubmit={addTask}>
-        <TextBar value={task} onChange={e => setTask(e.target.value)} />
+        <input className="px-1 border rounded-md" type="text" value={task} onChange={e => setTask(e.target.value)} />
+        <button className="px-1 mx-2 border-textSecondary rounded-md border-2">Submit</button>
       </form>
 
       <div className="m-2 p-2 w-60 flex flex-col justify-center mx-4 bg-white">
