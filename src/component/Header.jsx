@@ -6,7 +6,7 @@ const navigation = [
 	{name: "Other", href: "#"}
 ];
 
-function Header() {
+const Header = () => {
 	return (
 		<div className="grid grid-cols-2 pt-4 mx-3 min-w-screen">
 			<div className="font-bold sm:text-2xl text-xl text-textPrimary">
