@@ -6,7 +6,11 @@ const challengesList = [
 	{
 		name: "Todo",
 		href: "./#/Challenges/Todo"
-	}
+	},
+	{
+		name: "Picker Wheel",
+		href: "./#/Challenges/PickerWheel"
+	},
 ];
 
 function Challenges() {
