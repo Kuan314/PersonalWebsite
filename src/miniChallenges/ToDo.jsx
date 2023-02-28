@@ -29,7 +29,7 @@ const Todo = () => {
   
   return (
     <>
-    <div className="flex flex-col items-center pt-4">
+    <div className="flex flex-col items-center">
       <h1 className="text-5xl pb-2">
         Todo List
       </h1>
