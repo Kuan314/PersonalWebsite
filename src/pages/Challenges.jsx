@@ -8,8 +8,8 @@ const challengesList = [
 		href: "./#/Challenges/Todo"
 	},
 	{
-		name: "Picker Wheel",
-		href: "./#/Challenges/PickerWheel"
+		name: "Spinner",
+		href: "./#/Challenges/Spinner"
 	},
 ];
 

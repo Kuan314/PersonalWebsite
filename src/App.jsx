@@ -6,7 +6,7 @@ import Website from './pages/Website';
 import Header from './component/Header';
 import Counter from './miniChallenges/Counter';
 import Todo from './miniChallenges/ToDo';
-import PickerWheel from './miniChallenges/PickerWheel';
+import Spinner from './miniChallenges/Spinner';
 
 const App = () => {
   return (
@@ -23,7 +23,7 @@ const App = () => {
 				{/* Mini Challenges */}
 				<Route path="/Challenges/Counter" element={<Counter />} />
 				<Route path="/Challenges/Todo" element={<Todo />} />
-				<Route path="/Challenges/PickerWheel" element={<PickerWheel />} />
+				<Route path="/Challenges/Spinner" element={<Spinner />} />
 
 			</Routes>
 		</div>
