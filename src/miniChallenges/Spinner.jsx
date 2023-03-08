@@ -6,7 +6,7 @@ const Spinner = () => {
 
 	const [selection, setSelection] = useState("");
 
-	const addSelection = () => {
+	const addSelection = (event) => {
     if(selection.match(/^[\S]+$/)){
       selections.push(
 				{
@@ -18,6 +18,7 @@ const Spinner = () => {
     }
 
     setSelection("");
+		event.preventDefault();
 	}
 
 	return (

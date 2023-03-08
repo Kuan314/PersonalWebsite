@@ -14,7 +14,7 @@ const tasks = [
 const Todo = () => {
   const [task, setTask] = useState("");
 
-  const addTask = () => {
+  const addTask = (event) => {
     if(task.match(/^[\S]+$/)){
       tasks.push({
         name: task,
@@ -25,6 +25,7 @@ const Todo = () => {
     }
 
     setTask("");
+    event.preventDefault();
   }
   
   return (
