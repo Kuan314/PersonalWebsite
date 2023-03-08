@@ -2,7 +2,7 @@ import React, { useState } from "react";
 
 const selections = [];
 
-const PickerWheel = () => {
+const Spinner = () => {
 
 	const [selection, setSelection] = useState("");
 
@@ -41,4 +41,4 @@ const PickerWheel = () => {
 	)
 }
 
-export default PickerWheel;
+export default Spinner;
