@@ -1,3 +1,5 @@
+import React from "react";
+
 function Home() {
 		return (
 			<div className="mt-4 h-96 flex sm:justify-center justify-start items-center">
