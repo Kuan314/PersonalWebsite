@@ -24,7 +24,7 @@ const Spinner = () => {
 		setMustSpin(true);
 	}
 
-	const handleAddSelection = () => {
+	const handleAddSelection = (event) => {
     if(selection.match(/^[\S]+$/)){
       const updatedSelections = selections;
 			updatedSelections.push(
@@ -39,6 +39,7 @@ const Spinner = () => {
     }
 
     setSelection("");
+		event.preventDefault();
 	}
 
 	const handleDeletedSelection = (deletedSelection) => {
