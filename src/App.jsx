@@ -8,7 +8,7 @@ import Header from './component/Header';
 import Counter from './miniChallenges/Counter';
 import Todo from './miniChallenges/ToDo';
 import Spinner from './miniChallenges/Wheel';
-import Pong from './miniChallenges/Pong';
+import Snake from './miniChallenges/Snake';
 
 const App = () => {
   return (
@@ -26,7 +26,7 @@ const App = () => {
 				<Route path="/Challenges/Counter" element={<Counter />} />
 				<Route path="/Challenges/Todo" element={<Todo />} />
 				<Route path="/Challenges/Wheel" element={<Spinner />} />
-				<Route path="/Challenges/Pong" element={<Pong />} />
+				<Route path="/Challenges/Snake" element={<Snake />} />
 
 			</Routes>
 		</div>

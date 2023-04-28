@@ -14,8 +14,8 @@ const challengesList = [
 		href: "./#/Challenges/Wheel"
 	},
 	{
-		name: "Pong",
-		href: "./#/Challenges/Pong"
+		name: "Snake",
+		href: "./#/Challenges/Snake"
 	},
 ];
 
