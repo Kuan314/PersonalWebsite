@@ -1,7 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import { AiFillCaretDown, AiFillCaretLeft, AiFillCaretRight, AiFillCaretUp } from "react-icons/ai";
 
 const Snake = () => {
+  const [snake, setSnake] = useState([{x: 10, y: 10}]);
+
   return (
     <div className="flex items-center flex-col">
       <div className="bg-slate-200 w-[30%] aspect-square border-2 border-black rounded">

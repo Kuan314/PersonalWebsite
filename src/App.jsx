@@ -8,7 +8,7 @@ import Header from './component/Header';
 import Counter from './miniChallenges/Counter';
 import Todo from './miniChallenges/ToDo';
 import Spinner from './miniChallenges/Wheel';
-import Snake from './miniChallenges/Snake';
+import Snake from './miniChallenges/Snake/Snake';
 
 const App = () => {
   return (
