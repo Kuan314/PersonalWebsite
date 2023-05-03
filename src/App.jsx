@@ -9,6 +9,7 @@ import Counter from './miniChallenges/Counter';
 import Todo from './miniChallenges/ToDo';
 import Spinner from './miniChallenges/Wheel';
 import Snake from './miniChallenges/Snake/Snake';
+import CountDown from './miniChallenges/CountDown';
 
 const App = () => {
   return (
@@ -27,6 +28,7 @@ const App = () => {
 				<Route path="/Challenges/Todo" element={<Todo />} />
 				<Route path="/Challenges/Wheel" element={<Spinner />} />
 				<Route path="/Challenges/Snake" element={<Snake />} />
+				<Route path="/Challenges/CountDown" element={<CountDown />} />
 
 			</Routes>
 		</div>

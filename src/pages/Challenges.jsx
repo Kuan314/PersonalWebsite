@@ -21,6 +21,11 @@ const challengesList = [
 		href: "./#/Challenges/Snake",
 		status: false,
 	},
+	{
+		name: "CountDown",
+		href: "./#/Challenges/CountDown",
+		status: true,
+	},
 ];
 
 function Challenges() {
