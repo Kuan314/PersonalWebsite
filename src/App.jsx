@@ -1,19 +1,20 @@
-import React from 'react';
+import React, { Suspense, lazy } from 'react';
 import { Routes, Route } from 'react-router-dom';
 import About from './pages/About';
 import Home from './pages/Home';
 import MiniChallenge from './pages/Challenges';
 import Website from './pages/Website';
 import Header from './component/Header';
-import Counter from './miniChallenges/Counter';
-import Todo from './miniChallenges/ToDo';
-import Spinner from './miniChallenges/Wheel';
-import Snake from './miniChallenges/Snake/Snake';
-import CountDown from './miniChallenges/CountDown';
+
+// lazy loading
+const Counter = lazy(() => import('./miniChallenges/Counter'));
+const Todo = lazy(() => import('./miniChallenges/ToDo'));
+const Spinner = lazy(() => import('./miniChallenges/Wheel'));
+const Snake = lazy(() => import('./miniChallenges/Snake/Snake'));
+const CountDown = lazy(() => import('./miniChallenges/CountDown'));
 
 const App = () => {
   return (
-		<>
 		<div className='bg-primary h-screen'>
 			<Header />
 			<Routes>
@@ -24,15 +25,16 @@ const App = () => {
 				<Route path="/about" element={<About />} />
 
 				{/* Mini Challenges */}
-				<Route path="/Challenges/Counter" element={<Counter />} />
-				<Route path="/Challenges/Todo" element={<Todo />} />
-				<Route path="/Challenges/Wheel" element={<Spinner />} />
-				<Route path="/Challenges/Snake" element={<Snake />} />
-				<Route path="/Challenges/CountDown" element={<CountDown />} />
+				<Suspense fallback={<div>loading...</div>}>
+					<Route path="/Challenges/Counter" element={<Counter />} />
+					<Route path="/Challenges/Todo" element={<Todo />} />
+					<Route path="/Challenges/Wheel" element={<Spinner />} />
+					<Route path="/Challenges/Snake" element={<Snake />} />
+					<Route path="/Challenges/CountDown" element={<CountDown />} />
+				</Suspense>
 
 			</Routes>
 		</div>
-		</>
 	)
 }
 
