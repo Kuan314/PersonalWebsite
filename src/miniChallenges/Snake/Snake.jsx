@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { AiFillCaretDown, AiFillCaretLeft, AiFillCaretRight, AiFillCaretUp } from "react-icons/ai";
 
 const Snake = () => {
