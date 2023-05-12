@@ -2,8 +2,8 @@ import React from "react";
 
 const navigation = [
 	{name: "Challenges", href: "/PersonalWebsite/#/Challenges"},
-	{name: "Website", href: "/PersonalWebsite/#/website"},
-	{name: "Other", href: "#"}
+	// {name: "Website", href: "/PersonalWebsite/#/website"},
+	// {name: "Other", href: "#"}
 ];
 
 const Header = () => {

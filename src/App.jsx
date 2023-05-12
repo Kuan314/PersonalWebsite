@@ -1,11 +1,11 @@
 import React, { Suspense, lazy } from 'react';
 import { Routes, Route } from 'react-router-dom';
-import About from './pages/About';
 import Home from './pages/Home';
 import MiniChallenge from './pages/Challenges';
-import Website from './pages/Website';
 import Header from './component/Header';
 import Loading from './component/Loading';
+// import Website from './pages/Website';
+// import About from './pages/About';
 
 // lazy loading
 const Counter = lazy(() => import('./miniChallenges/Counter'));
@@ -24,8 +24,8 @@ const App = () => {
 					{/* Main Pages */}
 					<Route exact path="/" element={<Home />} />
 					<Route path="/Challenges" element={<MiniChallenge />} />
-					<Route path="/website" element={<Website />} />
-					<Route path="/about" element={<About />} />
+					{/* <Route path="/website" element={<Website />} /> */}
+					{/* <Route path="/about" element={<About />} /> */}
 				
 					{/* Mini Challenges */}
 					<Route path="/Challenges/Counter" element={<Counter />} />
