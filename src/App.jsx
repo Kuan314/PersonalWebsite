@@ -16,7 +16,7 @@ const CountDown = lazy(() => import('./miniChallenges/CountDown'));
 
 const App = () => {
   return (
-		<div className='bg-primary h-screen'>
+		<div className='bg-black h-screen'>
 			<Header />
 			
 			<Suspense fallback={<Loading />}>

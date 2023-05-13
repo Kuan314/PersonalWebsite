@@ -53,7 +53,6 @@ const Spinner = () => {
 	}
 
 	return (
-		<>
 		<div className="flex justify-center">
 			<div className="flex flex-col">
 				<Wheel
@@ -65,13 +64,13 @@ const Spinner = () => {
 					onStopSpinning={handleFinishSpin}
 				/>
 
-				<button type="button" onClick={handleSpinClick} className="bg-textSecondary text-white px-1 w-20 rounded self-center">
+				<button type="button" onClick={handleSpinClick} className="bg-textSecondary text-textPrimary px-1 w-20 rounded self-center">
 					Spin
 				</button>
 			</div>
 			
 			<div className="flex flex-col items-center px-4">
-				<div className="h-80 w-72 bg-white rounded overflow-y-auto">
+				<div className="h-80 w-72 bg-textPrimary rounded text-textSecondary overflow-y-auto">
 					{selections.map((selection) => {
 						return (
 							<>
@@ -95,12 +94,11 @@ const Spinner = () => {
 
 				<form onSubmit={handleAddSelection} className="pt-4">
 					<input className="px-1 border rounded-md" type="text" value={selection} onChange={e => setSelection(e.target.value)} />
-					<button className="px-1 mx-2 border-textSecondary rounded-md border-2">Submit</button>
+					<button className="px-1 mx-2 border-textPrimary text-textPrimary rounded-md border-2">Submit</button>
 				</form>
 			</div>
 				
 		</div>
-		</>
 	)
 }
 

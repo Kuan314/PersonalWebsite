@@ -17,7 +17,7 @@ const Counter = () => {
 
   return ( 
     <>
-    <div className="flex flex-col items-center">
+    <div className="flex flex-col items-center text-textPrimary">
       <h1 className="text-5xl">Counter</h1>
       <div className="p-3 my-2 text-3xl rounded-md">
         {num}

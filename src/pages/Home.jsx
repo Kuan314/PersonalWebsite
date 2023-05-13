@@ -4,8 +4,8 @@ import { TypeAnimation } from "react-type-animation";
 function Home() {
 		return (
 			
-			<div className="mt-4 h-96 flex sm:justify-center justify-start items-center">
-				<h1 className="text-8xl text-textPrimary font-bold">
+			<div className="mt-4 flex sm:justify-center justify-start items-center">
+				<h2 className="text-textPrimary text-2xl font-bold">
 					<TypeAnimation
 						sequence={[
 							'H', 400, 
@@ -33,7 +33,7 @@ function Home() {
 						
 						wrapper="span"
 					/>
-				</h1>
+				</h2>
 
 			</div>
 		)
