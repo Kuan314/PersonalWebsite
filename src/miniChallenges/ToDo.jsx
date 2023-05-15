@@ -29,7 +29,6 @@ const Todo = () => {
   }
   
   return (
-    <>
     <div className="flex flex-col items-center text-textPrimary">
       <h1 className="text-5xl pb-2">
         Todo List
@@ -51,7 +50,6 @@ const Todo = () => {
         })}
       </div>
     </div>
-    </>
   )
 }
 
