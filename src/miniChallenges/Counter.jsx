@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { AiOutlineMinus, AiOutlinePlus } from "react-icons/ai"
 
 const Counter = () => {
   const [num, setNum] = useState(0);
@@ -23,16 +24,16 @@ const Counter = () => {
       </div>
       <div className="flex">
         <button 
-          className="w-12 p-2 m-2 text-xl border-textSecondary border-2 rounded-md hover:bg-textSecondary hover:text-white" 
+          className="p-2 m-2 text-xl border-textSecondary border-2 rounded-md hover:bg-textSecondary hover:text-white" 
           onClick={addNum}
         >
-          +
+          <AiOutlinePlus />
         </button>
         <button 
-          className="w-12 p-2 m-2 text-xl border-textSecondary border-2 rounded-md hover:bg-textSecondary hover:text-white"
+          className="p-2 m-2 text-xl border-textSecondary border-2 rounded-md hover:bg-textSecondary hover:text-white"
           onClick={minusNum}
         >
-          -
+          <AiOutlineMinus />
         </button>
         <button
           className="p-2 m-2 text-xl border-textSecondary border-2 rounded-md hover:bg-textSecondary hover:text-white"
