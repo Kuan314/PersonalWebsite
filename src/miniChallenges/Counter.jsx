@@ -5,11 +5,11 @@ const Counter = () => {
   const [num, setNum] = useState(0);
 
   const addNum = () => {
-    setNum(num + 1);
+    setNum(prevNum => prevNum + 1);
   };
 
   const minusNum = () => {
-    setNum(num - 1);
+    setNum(prevNum => prevNum  - 1);
   };
 
   const resetNum = () => {
