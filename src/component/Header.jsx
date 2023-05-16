@@ -4,7 +4,7 @@ const Header = () => {
 	return (
 		<div className="grid grid-cols-2 pt-4 pb-4 mx-3 min-w-screen text-textPrimary">
 			<div className="font-bold sm:text-2xl text-xl ">
-				<a href="/PersonalWebsite/">
+				<a href="/PersonalWebsite">
 					Home
 				</a>
 			</div>

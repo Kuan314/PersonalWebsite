@@ -4,6 +4,7 @@ import Home from './pages/Home';
 import MiniChallenge from './pages/Challenges';
 import Header from './component/Header';
 import Loading from './component/Loading';
+import NotFound from './component/NotFound';
 
 // lazy loading
 const Counter = lazy(() => import('./miniChallenges/Counter'));
@@ -19,7 +20,7 @@ const App = () => {
 			<Suspense fallback={<Loading />}>
 				<Routes>
 					{/* Main Pages */}
-					<Route exact path="/" element={<Home />} />
+					<Route exact path="/PersonalWebsite" element={<Home />} />
 					<Route path="/Challenges" element={<MiniChallenge />} />
 				
 					{/* Mini Challenges */}
@@ -27,6 +28,9 @@ const App = () => {
 					<Route path="/Challenges/Todo" element={<Todo />} />
 					<Route path="/Challenges/Wheel" element={<Spinner />} />
 					<Route path="/Challenges/CountDown" element={<CountDown />} />
+
+					{/* Not Found */}
+					<Route path="*" element={<NotFound />} />
 				</Routes>
 			</Suspense>
 		</div>
