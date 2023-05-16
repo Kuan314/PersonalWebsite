@@ -20,7 +20,7 @@ const App = () => {
 			<Suspense fallback={<Loading />}>
 				<Routes>
 					{/* Main Pages */}
-					<Route exact path="/PersonalWebsite" element={<Home />} />
+					<Route exact path="/" element={<Home />} />
 					<Route path="/Challenges" element={<MiniChallenge />} />
 				
 					{/* Mini Challenges */}
