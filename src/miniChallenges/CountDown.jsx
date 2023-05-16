@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { AiOutlineCaretUp, AiOutlineCaretDown } from "react-icons/ai";
 
 const CountDown = () => {
   const [count, setCount] = useState(65);
@@ -23,9 +24,17 @@ const CountDown = () => {
 
   }, [isRunning, count]);
 
+  const handleAdd = (val) => {
+    setCount(prevCount => prevCount + val);
+  };
+
+  const handleMinus = (val) => {
+    setCount(prevCount => prevCount - val);
+  };
+
   const handleStart = () => {
     setIsRunning(!isRunning);
-  }
+  };
 
   const min = Math.floor(count / 60);
   const sec = count % 60;
@@ -33,8 +42,18 @@ const CountDown = () => {
   return (
     <div className="flex flex-col items-center text-textPrimary">
       <h1 className="text-5xl">Count Down</h1>
-      <div className="p-3 my-2 text-3xl">
-        {min >= 10 ? min : "0" + min.toString()} : {sec >= 10 ? sec : "0" + sec.toString()}      
+      <div className="flex items-center text-3xl select-none">
+        <div className="p-3">
+          <AiOutlineCaretUp onClick={() => handleAdd(60)} className={isRunning ? "invisible" : ""} />
+          {min >= 10 ? min : "0" + min.toString()}
+          <AiOutlineCaretDown onClick={() => handleMinus(60)} className={isRunning ? "invisible" : ""} />
+        </div>
+        :
+        <div className="p-3">
+          <AiOutlineCaretUp onClick={() => handleAdd(1)} className={isRunning ? "invisible" : ""} />
+          {sec >= 10 ? sec : "0" + sec.toString()}
+          <AiOutlineCaretDown onClick={() => handleMinus(1)} className={isRunning ? "invisible" : ""} />
+        </div>
       </div>
 
       <button 
