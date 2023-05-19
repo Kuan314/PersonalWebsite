@@ -1,6 +1,6 @@
 import React from "react";
 import { TypeAnimation } from "react-type-animation";
-import Header from '../component/Header';
+import Header from '../components/Header';
 
 function Home() {
 		return (

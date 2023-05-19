@@ -3,8 +3,8 @@ import { Routes, Route } from 'react-router-dom';
 import Home from './pages/Home';
 import Challenges from './pages/Challenges';
 import ChallengesPage from './pages/ChallengesPage';
-import Loading from './component/Loading';
-import NotFound from './component/NotFound';
+import Loading from './components/Loading';
+import NotFound from './components/NotFound';
 
 // lazy loading
 const Counter = lazy(() => import('./miniChallenges/Counter'));
