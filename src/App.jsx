@@ -11,7 +11,7 @@ const Counter = lazy(() => import('./miniChallenges/Counter'));
 const Todo = lazy(() => import('./miniChallenges/ToDo'));
 const Wheel = lazy(() => import('./miniChallenges/Wheel'));
 const CountDown = lazy(() => import('./miniChallenges/CountDown'));
-const RestaurantWebsite = lazy(() => import('./pages/Restaurant/RestaurantIndex'));
+const RestaurantWebsite = lazy(() => import('./pages/Restaurant/Restaurant'));
 
 const App = () => {
   return (

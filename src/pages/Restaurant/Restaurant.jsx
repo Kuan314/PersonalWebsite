@@ -3,7 +3,7 @@ import Header from "./RestaurantComponents/Header";
 import Footer from "./RestaurantComponents/Footer";
 import { Routes, Route } from "react-router-dom";
 import MainPage from "./RestaurantPages/Mainpage";
-import Foods from "./RestaurantPages/Foods";
+import Foods from "./RestaurantPages/Menu";
 import Contact from "./RestaurantPages/Contact";
 
 const RestaurantIndex = () => {
@@ -12,10 +12,9 @@ const RestaurantIndex = () => {
     <Header />
 
     <Routes>
-      <Route index element={<MainPage />} >
-        <Route path="Foods" element={<Foods />} />
-        <Route path="Contact" element={<Contact />} />
-      </Route>
+			<Route index path="/" element={<MainPage />} />
+      <Route path="Foods" element={<Foods />} />
+      <Route path="Contact" element={<Contact />} />
     </Routes>
 
     <Footer />
