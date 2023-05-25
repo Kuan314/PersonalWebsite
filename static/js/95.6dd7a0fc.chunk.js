@@ -1,2 +1,0 @@
-"use strict";(self.webpackChunkpersonalwebsite=self.webpackChunkpersonalwebsite||[]).push([[95],{95:function(e,s,t){t.r(s);t(791);var a=t(184);s.default=function(){return(0,a.jsx)("div",{className:"bg-white",children:"restaurant first page"})}}}]);
-//# sourceMappingURL=95.6dd7a0fc.chunk.js.map
