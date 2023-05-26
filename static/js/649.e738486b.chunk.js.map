@@ -1,0 +1,1 @@
+{"version":3,"file":"static/js/649.e738486b.chunk.js","mappings":"iJAUA,UARgB,WACd,OACE,oCAIJ,C","sources":["pages/Restaurant/RestaurantPages/Reserve.jsx"],"sourcesContent":["import React from \"react\";\n\nconst Reserve = () => {\n  return (\n    <div>\n      Reserve\n    </div>\n  );\n}\n\nexport default Reserve;"],"names":[],"sourceRoot":""}
