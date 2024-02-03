@@ -1,27 +1,5 @@
 import React from "react";
-
-const challengesList = [
-	{
-		name: "Counter",
-		href: "./#/Challenges/Counter",
-		status: true,
-	},
-	{
-		name: "Todo",
-		href: "./#/Challenges/Todo",
-		status: true,
-	},
-	{
-		name: "Lucky Wheel",
-		href: "./#/Challenges/Wheel",
-		status: true,
-	},
-	{
-		name: "CountDown",
-		href: "./#/Challenges/CountDown",
-		status: true,
-	},
-];
+import challengesList from "../miniChallenges/challengesList.json";
 
 const ChallengesPage = () => {
 	return (

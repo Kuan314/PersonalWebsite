@@ -1,0 +1,22 @@
+[
+    {
+		"name": "Counter",
+		"href": "./#/Challenges/Counter",
+		"status": true
+	},
+	{
+		"name": "Todo",
+		"href": "./#/Challenges/Todo",
+		"status": true
+	},
+	{
+		"name": "Lucky Wheel",
+		"href": "./#/Challenges/Wheel",
+		"status": true
+	},
+	{
+		"name": "CountDown",
+		"href": "./#/Challenges/CountDown",
+		"status": true
+	}
+]
