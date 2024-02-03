@@ -18,5 +18,10 @@
 		"name": "CountDown",
 		"href": "./#/Challenges/CountDown",
 		"status": true
-	}
+	},
+    {
+        "name": "Guess Number",
+        "href": "./#/Challenges/GuessNum",
+        "status": true
+    }
 ]

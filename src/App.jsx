@@ -11,6 +11,7 @@ const Counter = lazy(() => import('./miniChallenges/Counter'));
 const Todo = lazy(() => import('./miniChallenges/ToDo'));
 const Wheel = lazy(() => import('./miniChallenges/Wheel'));
 const CountDown = lazy(() => import('./miniChallenges/CountDown'));
+const GuessNum = lazy(() => import('./miniChallenges/GuessNum'));
 
 const App = () => {
   return (
@@ -24,6 +25,7 @@ const App = () => {
 					<Route path="Todo" element={<Todo />} />
 					<Route path="Wheel" element={<Wheel />} />
 					<Route path="CountDown" element={<CountDown />} />
+					<Route path="GuessNum" element={<GuessNum />} />
 					<Route path="*" element={<NotFound />} />
 				</Route>
 
