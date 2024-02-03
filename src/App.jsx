@@ -11,11 +11,6 @@ const Counter = lazy(() => import('./miniChallenges/Counter'));
 const Todo = lazy(() => import('./miniChallenges/ToDo'));
 const Wheel = lazy(() => import('./miniChallenges/Wheel'));
 const CountDown = lazy(() => import('./miniChallenges/CountDown'));
-const RestaurantWebsite = lazy(() => import('./pages/Restaurant/RestaurantIndex'));
-const MainPage = lazy(() => import('./pages/Restaurant/RestaurantPages/Mainpage'));
-const Menu = lazy(() => import('./pages/Restaurant/RestaurantPages/Menu'));
-const Contact = lazy(() => import('./pages/Restaurant/RestaurantPages/Contact'));
-const Reserve = lazy(() => import('./pages/Restaurant/RestaurantPages/Reserve'));
 
 const App = () => {
   return (
@@ -32,14 +27,6 @@ const App = () => {
 					<Route path="*" element={<NotFound />} />
 				</Route>
 
-				{/* Restaurant Websites */}
-				<Route path="Restaurant" element={<RestaurantWebsite />} >
-					<Route index element={<MainPage />} />
-					<Route path="Menu" element={<Menu />} />
-					<Route path="Contact" element={<Contact />} />
-					<Route path="Reserve" element={<Reserve />} />
-					<Route path="*" element={<NotFound />} />
-				</Route>
 			</Routes>
 		</Suspense>
 	)
