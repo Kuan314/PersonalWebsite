@@ -1,1 +1,0 @@
-{"version":3,"file":"static/js/854.f8e1500a.chunk.js","mappings":"iJAUA,UARa,WACX,OACE,iCAIJ,C","sources":["pages/Restaurant/RestaurantPages/Menu.jsx"],"sourcesContent":["import React from \"react\";\n\nconst Menu = () => {\n  return (\n    <div>\n      Menu\n    </div>\n  );\n}\n\nexport default Menu;"],"names":[],"sourceRoot":""}
