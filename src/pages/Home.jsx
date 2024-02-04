@@ -6,7 +6,7 @@ function Home() {
 		return (
 			<div className='bg-black h-screen'>
 				<Header />
-				<div className="mt-4 flex sm:justify-center justify-start items-center">
+				<div className="mt-4 mx-3 flex sm:justify-center justify-start items-center">
 					<h2 className="text-textPrimary text-2xl font-bold">
 						<TypeAnimation
 							sequence={[
